@@ -28,7 +28,7 @@ describe('A dbm', function(){
 	})
 
 	it('returns all dbs if you invoke the get method with the key \'_dbs\'', function(){
-		expect(dbm.get('_dbs')).toBe({})
+		expect(dbm.get('_dbs')).toBeDefined()
 
 		dbm.set('db1')
 		dbm.set('db2')

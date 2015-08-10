@@ -1,0 +1,21 @@
+{
+  "name": "kvm-db",
+  "version": "1.0.0",
+  "description": "A simple key-value in memory 'database'",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/jasmine/bin/jasmine.js"
+  },
+  "keywords": [
+    "simple",
+    "key-value",
+    "in-memory",
+    "store",
+    "database"
+  ],
+  "author": "wesleylira@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.3.2"
+  }
+}

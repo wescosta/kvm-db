@@ -2,10 +2,16 @@
   "name": "kvm-db",
   "version": "1.0.0",
   "description": "A simple key-value in memory 'database'",
-  "main": "index.js",
-  "scripts": {
-    "test": "node_modules/jasmine/bin/jasmine.js"
+  "author": "wesleylira@gmail.com",
+  "license": "Apache License",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wesleyanemam/kvm-db.git"
   },
+  "bugs": {
+    "url": "https://github.com/wesleyanemam/kvm-db/issues"
+  },
+  "homepage": "https://github.com/wesleyanemam/kvm-db",
   "keywords": [
     "simple",
     "key-value",
@@ -13,8 +19,10 @@
     "store",
     "database"
   ],
-  "author": "wesleylira@gmail.com",
-  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/jasmine/bin/jasmine.js"
+  },
   "devDependencies": {
     "jasmine": "^2.3.2"
   }

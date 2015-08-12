@@ -1,9 +1,9 @@
-var dbm, app = require('../index.js')
+var _dbm = require('../dbm.js')
 
 describe('A dbm', function(){
 
 	beforeEach(function(){
-		dbm = new app.dbm()
+		dbm = new _dbm()
 	})
 
 	it('creates and holds multiple database instances in memory with set/get methods', function(){

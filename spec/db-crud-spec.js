@@ -65,7 +65,7 @@ describe('A db', function(){
 		}).toThrow()
 	})
 
-	it('does not accepts gabage as valid value', function(){
+	it('does not accept gabage as valid value', function(){
 		var invalidValues = {
 			'strings': 'Sorry. No strings. Just create a variable for that. ;)',
 			'and no numbers': 1000,

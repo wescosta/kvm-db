@@ -17,7 +17,7 @@ describe('A dbm', function(){
 		expect(dbm.get('my-db')).toBeDefined()
 	})
 
-	it('removes a db when the del method is invoked', function(){
+	it('removes a db with the del method', function(){
 		var db_name = 'removed-db'
 
 		dbm.set(db_name)
@@ -52,6 +52,10 @@ describe('A dbm', function(){
 		}).toThrow()
 
 		expect(function(){
+			dbm.get(null)
+		}).toThrow()
+
+		expect(function(){
 			dbm.get(undefined)
 		}).toThrow()
 
@@ -61,6 +65,10 @@ describe('A dbm', function(){
 	})
 
 	it('throws an exception if you try to set a db without name', function(){
+		expect(function(){
+			dbm.set(null)
+		}).toThrow()
+
 		expect(function(){
 			dbm.set(undefined)
 		}).toThrow()

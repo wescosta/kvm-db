@@ -7,7 +7,7 @@ describe('A db', function(){
 		db = new _db()
 	})
 
-	it('is a key-value object in memory', function(){
+	it('is a collection of objects in memory', function(){
 		expect(db).toBeDefined()
 	})
 

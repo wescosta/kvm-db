@@ -64,7 +64,7 @@ xdescribe('A db', function(){
 		})
 	})
 
-	describe('works best as a collection (arrays of objects)', function(){
+	describe('works best with collections (arrays of objects) then query it', function(){
 		var people, tasks
 
 		before(function(){
@@ -137,5 +137,8 @@ xdescribe('A db', function(){
 			db.set('people', people)
 			db.set('tasks', tasks)
 		})
+
+
+		it('then it ')
 	})
 })
